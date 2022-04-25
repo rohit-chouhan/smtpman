@@ -8,17 +8,17 @@ import 'package:smtpman/secure.dart';
 import 'package:smtpman/smtpman.dart';
 ```
 #### 🚀 methods 
-### setServer()
+### ⭐setServer()
 First create a connection with your SMTP server, using SetServer() method
 ```dart
- smtpman.setServer(
-      host: "smtp.rohitchouhan.com",
-      username: "hello@crohitchouhan.com",
-      password: "<<password>>",
-      authentication: true,
-      port: Port.to_587,
-      secure: Secure.starttls,
-    );
+smtpman.setServer(
+    host: "smtp.rohitchouhan.com",
+    username: "hello@crohitchouhan.com",
+    password: "<<password>>",
+    authentication: true,
+    port: Port.to_587,
+    secure: Secure.starttls,
+);
 ```
 
 
@@ -32,16 +32,16 @@ First create a connection with your SMTP server, using SetServer() method
 | secure | Your SMTP Secure  | `Secure.starttls`,`Secure.ssl`,`Secure.auto`, or custom: `tls,ssl`   |
 
 
-### receipt()
+### ⭐receipt()
 then create receipt() method to add name, body, subject and all.
 ```dart
-  smtpman.receipt(
-      senderName: "Rohit Team",
-      sendToEmail: "itsrohitofficial@gmail.com",
-      subject: "How are you....",
-      body: "Hey, <b>Bro</b>",
-      html: true,
-    );
+smtpman.receipt(
+    senderName: "Rohit Team",
+    sendToEmail: "itsrohitofficial@gmail.com",
+    subject: "How are you....",
+    body: "Hey, <b>Bro</b>",
+    html: true,
+);
 ```
 
 
@@ -54,12 +54,14 @@ then create receipt() method to add name, body, subject and all.
 | html | To enable html body use `true`,else `false` |
 
 
-### send()
+### ⭐send()
 send method will return true if mail has send, else false.
 ```dart
 if (await smtpman.send() == true) {
-      debugPrint("Email has been sent!");
-    } else {
-      debugPrint("Faild to send, please check smtp credential.");
-  }
+    debugPrint("Email has been sent!");
+} else {
+    debugPrint("Faild to send, please check smtp credential.");
+}
 ```
+
+developed by <a href="https://linkedin.com/in/itsrohitchouhan">Rohit Chouhan ❤️</a>

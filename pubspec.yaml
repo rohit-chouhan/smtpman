@@ -1,6 +1,6 @@
 name: smtpman
 description: A Fast & Light SMTP Mail sender, with authentication support.
-version: 1.0.1
+version: 1.0.2
 homepage: https://rohitchouhan.com
 repository: https://github.com/rohit-chouhan/smtpman
 
