@@ -64,4 +64,14 @@ if (await smtpman.send() == true) {
 }
 ```
 
-developed by <a href="https://linkedin.com/in/itsrohitchouhan">Rohit Chouhan ❤️</a>
+## How its working?
+
+![](https://i.ibb.co/g44s1vH/smtp.png)
+
+Note: For those of you wondering, this package is not using any official library of Flutter. Email is sending from the third-party api using famous http package.
+
+When you call the function from the app, its call the smtpman third-party api to the our server, then our server reads your email and sends it as a string.
+
+The third-party api reads the string and uses it to send an email message on its own servers. Once it has done so (which could take several seconds or minutes), it sends an email back to our server with the subject and body of your message included in the body of the email.
+
+Developed by <a href="https://linkedin.com/in/itsrohitchouhan">Rohit Chouhan ❤️</a>
